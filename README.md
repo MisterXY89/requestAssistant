@@ -7,10 +7,10 @@ Avoid your requests from being blocked by using random *UserAgents* and *languag
 ## Usage
 ```python
 import requests
-from requestAssistant import RequestHeaderGenerator
+from requestAssistant import requestAssistant as ra
 
 url = "https://yourdomain.com"
-rhg = RequestHeaderGenerator()
+rhg = ra.RequestHeaderGenerator()
 randomHeader = rhg.getRandomRequestHeader()
 
 
@@ -18,7 +18,7 @@ requests.get(url, headers=randomHeader)
 ```
 
 ## Requirements
-`pip3 install numpy`
+`pip3 install numpy requests`
 
 
 ## Disclaimer
